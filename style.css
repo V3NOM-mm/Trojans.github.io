@@ -13,7 +13,7 @@ header {
 }
 
 main {
-    max-width: 800px;
+    max-width: 800px;   
     margin: 0 auto;
     padding: 20px;
 }
@@ -36,4 +36,12 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    margin: 10px; /* Add some margin between buttons */
 }
