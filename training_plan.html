@@ -34,40 +34,109 @@
             <ul>
                 <li>
                     Leg Swings (1 minute)
-                    <a href="https://www.youtube.com/watch?v=5v4HcDcUI9A&t=0s">"Watch"</a>
+                    <a href="https://www.youtube.com/watch?v=5v4HcDcUI9A&t=0s"><button class="toggleButton">Watch video</button></a>
                 </li>
                 <li>Arm Circles (30 seconds)
-                    <a href="https://www.youtube.com/watch?v=5v4HcDcUI9A&t=23s">"Watch"</a>
+                    <a href="https://www.youtube.com/watch?v=5v4HcDcUI9A&t=23s"><button class="toggleButton">Watch video</button></a>
                 </li>
                 <li>High Knees (30 seconds)
-                    <a href="https://www.youtube.com/watch?v=5v4HcDcUI9A&t=67s">"Watch"</a>
+                    <a href="https://www.youtube.com/watch?v=5v4HcDcUI9A&t=67s"><button class="toggleButton">Watch Video</button></a>
                 </li>
                 <li>Butt Kicks (30 seconds)
-                    <a href="https://www.youtube.com/watch?v=5v4HcDcUI9A&t=79s">"Watch"</a>
+                    <a href="https://www.youtube.com/watch?v=5v4HcDcUI9A&t=79s"><button class="toggleButton">Watch Video</button></a>
                 </li>
             </ul>
             <h5>1.3. Agility Drills (3 minutes)</h5>
             <ul>
                 <li>Ladder Drills (1 minute)
-                    <a href="https://www.youtube.com/watch?v=tEuiQpOgWvY&pp=ygUUZnV0c2FsIGxhZGRlciBkcmlsbHM%3D">"Watch"</a>
+                    <a href="https://www.youtube.com/watch?v=tEuiQpOgWvY&pp=ygUUZnV0c2FsIGxhZGRlciBkcmlsbHM%3D"><button class="toggleButton">Watch Video</button></a>
                 </li>
                 <li>Cone Weave (1 minute)
-                    <a href="https://www.youtube.com/shorts/ZtFLDGnGS48?feature=share">"Watch</a>
+                    <a href="https://www.youtube.com/shorts/ZtFLDGnGS48?feature=share"><button class="toggleButton">Watch Video</button></a>
                 </li>
                 <li>Side Shuffles (1 minute)
-                    <a href="https://www.youtube.com/shorts/DKu1rNPFGVY?feature=share">"Watch</a>
+                    <a href="https://www.youtube.com/shorts/DKu1rNPFGVY?feature=share"><button class="toggleButton">Watch Video</button></a>
                 </li>
             </ul>
             <h5>1.4. Ball Work (3 minutes)</h5>
             <ul>
-                <li>Dribbling Practice (1 minute)</li>
-                <li>Dribbling with Non-Dominant Foot (1 minute)</li>
-                <li>Dribbling Challenges (1 minute)</li>
+                <!-- Existing list items -->
+
+                <!-- Add a button to show/hide details -->
+                <li>
+                    Dribbling Practice (1 minute)
+                    <button class="toggleButton" id="dribblingPracticeToggle">Show Details</button>
+                </li>
+                <li id="dribblingPracticeDetails" style="display: none;">
+                    <!-- Additional details for Dribbling Practice -->
+                    <!-- You can add content here -->
+                    <ul>
+                        <li>Have players start by dribbling the ball using the inside of their dominant foot.</li>
+                        <li>Encourage them to take controlled touches and keep the ball close to their feet.</li>
+                        <li>Emphasize using the dominant foot initially to build confidence and control.</li>
+                    </ul>
+                </li>
+
+                <!-- Add a button to show/hide details -->
+                <li>
+                    Dribbling with Non-Dominant Foot (1 minute)
+                    <button class="toggleButton" id="nonDominantDribblingToggle">Show Details</button>
+                </li>
+                <li id="nonDominantDribblingDetails" style="display: none;">
+                    <!-- Additional details for Dribbling with Non-Dominant Foot -->
+                    <!-- You can add content here -->
+                    <ul>
+                        <li>After a minute of dribbling with the dominant foot, switch to dribbling with the non-dominant foot.</li>
+                        <li>Players should focus on using the inside of their non-dominant foot to maintain control.</li>
+                        <li>Encourage them to practice dribbling with both feet to enhance their ball-handling skills.</li>
+                    </ul>
+                </li>
+
+                <!-- Add a button to show/hide details -->
+                <li>
+                    Dribbling Challenges (1 minute)
+                    <button class="toggleButton" id="dribblingChallengesToggle">Show Details</button>
+                </li>
+                <li id="dribblingChallengesDetails" style="display: none;">
+                    <!-- Additional details for Dribbling Challenges -->
+                    <!-- You can add content here -->
+                    <ul>
+                        <li>To make it engaging and competitive, introduce dribbling challenges.</li>
+                        <li>Set up cones or markers on the training area and have players dribble through them in various patterns.</li>
+                        <li>Challenge them to complete dribbling circuits within a time limit or with specific rules (e.g., using only one foot).</li>
+                        <li>Add some quick changes of direction and agility elements to simulate game situations.</li>
+                    </ul>
+                </li>
             </ul>
+
             <h5>1.5. Dynamic Flexibility (2 minutes)</h5>
             <ul>
-                <li>Leg Swings (Forward and Side-to-Side) (40 seconds)</li>
-                <li>Hip Circles (20 seconds)</li>
+                <li>Leg Swings (Forward and Side-to-Side) (40 seconds)
+                    <button class="toggleButton" id="legSwingToogle">Show Details</button>
+                </li>
+                <li id="legSwingDetails" style="display: none;">
+                    <!-- Additional details for Dribbling Challenges -->
+                    <!-- You can add content here -->
+                    <ul>
+                        <li>Stand next to a wall or support for balance.</li>
+                        <li>Swing one leg forward and backward in a controlled manner.</li>
+                        <li>After 20 seconds, switch to swinging the same leg side-to-side.</li>
+                        <li>Repeat with the other leg.</li>
+                    </ul>
+                </li>
+                <li>Hip Circles (20 seconds)
+                    <button class="toggleButton" id="hipCirclesToogle">Show Details</button>
+                </li>
+                <li id="hipCirclesDetails" style="display: none;">
+                    <!-- Additional details for Dribbling Challenges -->
+                    <!-- You can add content here -->
+                    <ul>
+                        <li>Stand with your feet hip-width apart.</li>
+                        <li>Place your hands on your hips.</li>
+                        <li>Begin by making clockwise circles with your hips for 10 seconds.</li>
+                        <li>Then, make counterclockwise circles for the remaining 10 seconds.</li>
+                    </ul>
+                </li>
             </ul>
             <h5>1.6. Mental Preparation (1 minute)</h5>
             <ul>
@@ -257,6 +326,7 @@
             <button id="myButton">Home</button>
         </a>
     </footer>
+    <script src="style.js"></script>
 </body>
 
 </html>

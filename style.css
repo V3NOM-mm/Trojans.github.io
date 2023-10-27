@@ -75,3 +75,27 @@ tr:hover {
 footer {
     text-align: center;
 }
+
+
+/* Add this CSS for the "Show Details" buttons */
+
+.toggleButton {
+    background-color: #555;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    /* Adjust the margin as needed */
+}
+
+
+/* Style for the hidden details */
+
+li[id$="Details"] {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
