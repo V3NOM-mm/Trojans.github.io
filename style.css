@@ -99,3 +99,10 @@ li[id$="Details"] {
     border: 1px solid #ddd;
     margin-top: 5px;
 }
+
+
+/* Hide content with data-lang="my" (Burmese) by default */
+
+[data-lang="my"] {
+    display: none;
+}

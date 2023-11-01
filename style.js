@@ -28,3 +28,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
     toggleDetails("hipCirclesToogle", "hipCirclesDetails");
 });
+
+//Language
+document.addEventListener("DOMContentLoaded", function() {
+    // Define the current language (initially set to English)
+    let currentLang = "en";
+
+    // Function to toggle the language
+    function toggleLanguage() {
+        // Toggle the language between English and Burmese
+        currentLang = currentLang === "en" ? "my" : "en";
+
+        // Find all elements with data-lang attribute and update their content
+        const elements = document.querySelectorAll("[data-lang]");
+        elements.forEach(function(element) {
+            const lang = element.getAttribute("data-lang");
+            if (lang === currentLang) {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        });
+    }
+
+    // Attach a click event to a language switch button (customize the button according to your design)
+    const switchLangButton = document.getElementById("switchLangButton");
+
+    if (switchLangButton) {
+        switchLangButton.addEventListener("click", toggleLanguage);
+    }
+});
