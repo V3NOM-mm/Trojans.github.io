@@ -106,3 +106,21 @@ li[id$="Details"] {
 [data-lang="my"] {
     display: none;
 }
+
+
+/* Style for the table container */
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Style for individual tables */
+
+.two-team-table {
+    width: 48%;
+    /* Adjust as needed to leave some space between tables */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
