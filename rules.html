@@ -4,7 +4,7 @@
 <head>
     <title>Team Trojan</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="style.css"></script>
+    <script src="style.js"></script>
 </head>
 
 <body>
@@ -24,12 +24,14 @@
             <a href="rules.html"><button>Rules</button></a>
         </div>
         <section>
-            <h2>Team Rules and Regulations</h2>
-            <ul>
+            <button id="switchLangButton">English &lt;==> Burmese </button>
+            <h2 data-lang="en">Team Rules and Regulations</h2>
+            <h2 data-lang="my">အဖွဲ့စည်းကမ်းများ နှင့် စည်းမျဉ်းများ</h2>
+            <ul data-lang="en">
                 <li>
                     <h3>Weekly Attendance</h3>
                 </li>
-                <p>Please make an effort to join the team every Sunday without fail.</p>
+                <p>Please try to come to the team every Sunday.</p>
                 <li>
                     <h3>Leave Application</h3>
                 </li>
@@ -37,15 +39,15 @@
                 <li>
                     <h3>Unauthorized Absence</h3>
                 </li>
-                <p>In the case of unauthorized absence, a mandatory fine of 10,000 MMK must be paid. This helps us maintain our self-help club.</p>
+                <p>Absence is not allowed without complaint.</p>
                 <li>
                     <h3>Jersey and Field Fees</h3>
                 </li>
-                <p>As this is a self-help club, we appreciate members covering the full cost of jerseys and their proportionate share of field fees.</p>
+                <p>Since it is a self-supporting team, the jersey and field fee must be paid proportionally</p>
                 <li>
                     <h3>Punctuality</h3>
                 </li>
-                <p>Please be at the field before the scheduled time. If you're more than 15 minutes late, a fine of 5,000 MMK will be levied.</p>
+                <p>Please arrive at the futsal court before the scheduled time.</p>
                 <li>
                     <h3>Monthly Schedule</h3>
                 </li>
@@ -53,7 +55,7 @@
                 <li>
                     <h3>Respect in Training</h3>
                 </li>
-                <p>Kindly show respect during training. If you miss a meal, you may be fined 10,000 MMK.</p>
+                <p>Kindly show respect during training.</p>
                 <li>
                     <h3>No Fights</h3>
                 </li>
@@ -61,7 +63,55 @@
                 <li>
                     <h3>Rewards for Compliance</h3>
                 </li>
-                <p>Any member who fully complies with the above rules will be eligible for rewards from the fines received every 6 months. Your commitment is truly appreciated!</p>
+                <p>Every 6 months the club will give worthy prizes to the person(s) who fully comply with all the rules.</p>
+                <li>
+                    <h3>Punishment</h3>
+                </li>
+                <p>Violation of one or more of the rules shall be punishable by an appropriate penalty or fine.</p>
+            </ul>
+            <ul data-lang="my">
+                <li>
+                    <h3>လာရမည့်ရက်</h3>
+                </li>
+                <p>ကျေးဇူးပြု၍ တနင်္ဂနွေနေ့တိုင်း အသင်းသို့ လာနိုင်ရန် ကြိုးစားပေးပါ။</p>
+                <li>
+                    <h3>ခွင့်တိုင်ကြားရန်</h3>
+                </li>
+                <p>တနင်္ဂနွေနေ့တွင် မလာနိုင်ပါက ဗုဒ္ဓဟူးနေ့ညတွင် ခွင့်လျှောက်ထားပါ။ အကြောင်းအမျိုးမျိုးရှိနိုင်သည်ကို ကျွန်ုပ်တို့နားလည်သော်လည်း ကျန်းမာရေးပြဿနာများ၊ လူမှုဖူလုံရေးပြဿနာများ၊ မိသားစုကိစ္စများ၊ အရေးပေါ်လုပ်ငန်းလိုအပ်ချက်များနှင့် စာမေးပွဲများအတွက်သာ
+                    ခြွင်းချက်ထားပေးပါမည်။
+                </p>
+                <li>
+                    <h3>ခွင့်မဲ့ပျက်ကွက်ခြင်း</h3>
+                </li>
+                <p>ခွင့်မတိုင်ကြားပဲ ပျက်ကွက်ခွင့်မပြုပါ။</p>
+                <li>
+                    <h3>ဂျာစီနှင့် ကွင်းကြေးများ</h3>
+                </li>
+                <p>ကိုယ်ထူကိုယ်ထအသင်းဖြစ်သောကြောင့် ဂျာစီနှင့် ကွင်းကြေးကို အချိုးကျပေးရပါမည်။</p>
+                <li>
+                    <h3>အချိန်မှီလာရန်</h3>
+                </li>
+                <p>ကျေးဇူးပြု၍ သတ်မှတ်ချိန်မတိုင်မီ ကွင်းသို့ရောက်အောင်လာရပါမည်။</p>
+                <li>
+                    <h3>လစဉ်အချိန်ဇယား</h3>
+                </li>
+                <p>အသင်းသည် ပုံမှန်အားဖြင့် တစ်လလျှင် လေးရက်ကစားသည်။ ၂ရက်မှာ လေ့ကျင့်ရေး အတွက်ဖြစ်ပြီး ကျန် ၂ရက်မှာ ချိန်းပွဲအတွက် ဖြစ်ပါသည်။</p>
+                <li>
+                    <h3>လေ့ကျင့်ရေး၌ လေးစားမှု။</h3>
+                </li>
+                <p>လေ့ကျင့်နေစဉ်အတွင်း မလေးမစား ပြောဆိုမနေထိုင်ရပါ။</p>
+                <li>
+                    <h3>ရန်မဖြစ်ရ</h3>
+                </li>
+                <p>အသင်းသားအချင်းချင်းဖြစ်စေ၊ တခြားအသင်းနှင့်ဖြစ်စေ ခိုက်ရန်မဖြစ်ပွားရပါ။</p>
+                <li>
+                    <h3>ဆု</h3>
+                </li>
+                <p>စည်းကမ်းများအားလုံးကို အပြည့်အဝလိုက်နာသူ(များ) ကို အသင်းမှ ၆ လ တစ်ကြိမ် ထိုက်တန်သော ဆုများပေးပါမည်။</p>
+                <li>
+                    <h3>ပြစ်ဒဏ်</h3>
+                </li>
+                <p>စည်းကမ်းများမှ တစ်ခုဖြစ်စေ တစ်ခုထက်ပို၍ဖြစ်စေ ဖောက်ဖျက်ပါက ထိုက်သင့်သော ပစ်ဒဏ် သို့မဟုတ် ဒဏ်ကြေးပေးဆောင်ရပါမည်။</p>
             </ul>
         </section>
     </main>
