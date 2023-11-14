@@ -134,3 +134,16 @@ li[id$="Details"] {
     border-collapse: collapse;
     margin-top: 20px;
 }
+
+video {
+    width: 100%;
+    /* Sets the width of the video */
+    height: auto;
+    /* Automatically adjusts the height to maintain the video's aspect ratio */
+    border: 1px solid #ccc;
+    /* Adds a border around the video */
+}
+
+.red-text {
+    color: red;
+}
