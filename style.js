@@ -32,12 +32,12 @@ document.addEventListener("DOMContentLoaded", function() {
 //Language
 document.addEventListener("DOMContentLoaded", function() {
     // Define the current language (initially set to English)
-    let currentLang = "en";
+    let currentLang = "my";
 
     // Function to toggle the language
     function toggleLanguage() {
         // Toggle the language between English and Burmese
-        currentLang = currentLang === "en" ? "my" : "en";
+        currentLang = currentLang === "my" ? "en" : "my";
 
         // Find all elements with data-lang attribute and update their content
         const elements = document.querySelectorAll("[data-lang]");

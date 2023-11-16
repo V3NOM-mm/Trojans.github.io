@@ -112,7 +112,7 @@ li[id$="Details"] {
 
 /* Hide content with data-lang="my" (Burmese) by default */
 
-[data-lang="my"] {
+[data-lang="en"] {
     display: none;
 }
 
